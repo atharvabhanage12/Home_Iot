@@ -26,14 +26,14 @@ class MainActivity : AppCompatActivity() {
 
 
         onButton.setOnClickListener {
-            url = "https://api.thingspeak.com/update?api_key=E4H8T0FZSAGYMW6U&field1=1"
+            url = BuildConfig.API_KEY_ON
             launchUrl(url)
 
 
 
         }
         offButton.setOnClickListener {
-            url = "https://api.thingspeak.com/update?api_key=E4H8T0FZSAGYMW6U&field1=0"
+            url = BuildConfig.API_KEY_OFF
             launchUrl(url)
         }
 
