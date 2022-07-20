@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         val flag=0
         val ll = binding.constrain
         ll.setBackgroundColor(ContextCompat.getColor(this, R.color.purple_200))
-        var url = "https://api.thingspeak.com/update?api_key=E4H8T0FZSAGYMW6U&field1=1"
+        var url = ""
 
 
         onButton.setOnClickListener {
