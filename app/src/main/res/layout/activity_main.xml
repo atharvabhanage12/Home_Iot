@@ -15,20 +15,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#C3AF05"
-            android:text="ON"
+            android:text="@string/on"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button2"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.777" />
+            app:layout_constraintVertical_bias="0.951" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#050500"
-            android:text="OFF"
+            android:text="@string/off"
+            android:textColor="@color/white"
             app:layout_constraintBaseline_toBaselineOf="@+id/button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -36,14 +38,32 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="147dp"
-            android:layout_height="134dp"
+            android:layout_width="74dp"
+            android:layout_height="90dp"
             app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@mipmap/torch_round" />
+
+        <com.example.lediot.DialView
+            android:id="@+id/dialView"
+            android:layout_width="@dimen/fan_dimen"
+            android:layout_height="@dimen/fan_dimen"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            app:fanColor1="#FFEB3B"
+            app:fanColor2="#CDDC39"
+            app:fanColor3="#009688"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/torch_round" />
+            tools:ignore="MissingClass" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
